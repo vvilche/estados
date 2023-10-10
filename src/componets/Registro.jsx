@@ -4,10 +4,6 @@ import {faFacebook,faGithub,faLinkedin} from "@fortawesome/free-brands-svg-icons
 import SocialButton from "./SocialButton"
 import Formulario from "./Formulario";
 import Alert from "./Alert";
-//import Formulario from "./Formulario";
-
-
-
 
 function Registro() {
 

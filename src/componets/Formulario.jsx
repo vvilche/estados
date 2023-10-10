@@ -1,8 +1,6 @@
-
 import { useState } from 'react'
 import Form from 'react-bootstrap/Form'
 import Alert from './Alert'
-
 
 function Formulario () {
 
@@ -59,7 +57,6 @@ return (
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
-        
         <Form.Label>Repita su contraseña</Form.Label>
         <Form.Control type="password" placeholder="Repita su contraseña" value={password2} onChange={(e) => setPassword2(e.target.value)} />
       </Form.Group>
