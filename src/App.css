@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -45,7 +47,6 @@
   display: flex;
   justify-content: center;
   margin 1em 0;
- 
 }
 
 .iconos {
@@ -54,7 +55,6 @@
   padding: 12px;
   cursor: pointer;
 }
-
 
 .Formulario {
   background-color: #ffffff;
