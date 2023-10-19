@@ -8,6 +8,7 @@ const [nombre, setNombre] = useState('');
 const [mail, setMail] = useState('');
 const [password, setPassword] = useState('');
 const [password2, setPassword2] = useState('');
+const [genero, setGenero] = useState('');
 const [alertMessage, setAlertMessage] = useState('');
 const [alertVariant, setAlertVariant] = useState('');
 
@@ -23,7 +24,7 @@ const handleSubmit = (e) => {
     return;
   }
 
-  if (nombre === '' || mail === '' || password === '' || password2 === '') {
+  if (nombre === '' || mail === '' || password === '' || password2 === '' || genero === "") {
     muestraAlerta('Todos los campos son obligatorios', 'danger');
     return;
   }
@@ -59,6 +60,15 @@ return (
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Repita su contraseña</Form.Label>
         <Form.Control type="password" placeholder="Repita su contraseña" value={password2} onChange={(e) => setPassword2(e.target.value)} />
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="formBasicGenero"> 
+      <Form.Label>Género</Form.Label>
+      <Form.Control as="select" value={genero} onChange={(e) => setGenero(e.target.value)}> 
+      <option value= "masculino"> Masculino</option>
+      <option value= "femenino"> Femenino</option>
+      <option value= "otro"> Otro </option>
+      </Form.Control>
       </Form.Group>
 
       <button className="btn btn-primary" type="submit">
